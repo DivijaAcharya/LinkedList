@@ -1,0 +1,32 @@
+
+import java.util.LinkedList;
+public class Main
+{
+	public static void main(String[] args) {
+		LinkedList<String> linkedList = new LinkedList<>();
+		linkedList.add("elemnt1");
+		linkedList.add("elemnt2");
+		linkedList.add("elemnt3");
+		
+	// to add an element in the beginning
+	linkedList.addFirst("addFirst()");
+	
+    // 	add element at the begining of the list
+    linkedList.offerFirst("offerFirst()");
+	
+    // 	to add element last
+    linkedList.addLast("addLast()");
+    linkedList.add("add()");
+    
+    // adding element at last of the list
+    linkedList.offerLast("offerLast()");
+    linkedList.offer("offer()");
+    
+    // adding element at given index
+    linkedList.add(2,"index 2");
+    
+    // set/change elements present at index elemnt3
+    linkedList.set(3,"set()");
+	    System.out.println(linkedList);
+	}
+}
