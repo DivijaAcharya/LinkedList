@@ -1,0 +1,55 @@
+
+import java.util.LinkedList;
+public class Main
+{
+	public static void main(String[] args) {
+		LinkedList<String> linkedList = new LinkedList<>();
+		linkedList.add("element1");
+		linkedList.add("element2");
+		linkedList.add("element3");
+		linkedList.add("element1");
+		linkedList.add("element3");
+		linkedList.add("element3");
+		linkedList.add("element2");
+		linkedList.add("element2");
+		linkedList.add("element3");
+		linkedList.add("element3");
+		System.out.println("Before removing 1st element"+ linkedList);
+		
+        // 	remove element at first
+        linkedList.removeFirst();
+	    System.out.println("After removing 1st element"+linkedList);
+	    
+	   // remove elements using poll()
+	   linkedList.poll();
+	   	System.out.println(linkedList);
+	   	
+	   // remove elements using poll()
+	   linkedList.pollFirst();
+	   	System.out.println(linkedList);
+	   
+	    // removing last element
+	   linkedList.remove();
+	   	System.out.println(linkedList);	
+	   
+	   // removing last element
+	   linkedList.removeLast();
+	   	System.out.println("after removing last element"+ linkedList);
+	   
+	   	// removing last element
+	   linkedList.pollLast();
+	   	System.out.println (    linkedList);
+	   	
+	   //	removing 1st occurence of element3
+	   linkedList.removeFirstOccurrence("element2");
+	   System.out.println(linkedList);
+	   
+	   //   removing last occurence of element1
+	   linkedList.removeLastOccurrence("element3");
+		System.out.println(linkedList);
+		 
+	    // removing  element at given index
+	   linkedList.remove(1);
+	   	System.out.println(linkedList);	
+	}
+}
