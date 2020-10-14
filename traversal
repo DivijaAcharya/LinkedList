@@ -1,0 +1,43 @@
+
+import java.util.LinkedList;
+public class Main
+{
+	public static void main(String[] args) {
+		LinkedList<String> linkedList = new LinkedList<>();
+		linkedList.add("element1");
+		linkedList.add("element2");
+		linkedList.add("element3");
+		linkedList.add("element1");
+		linkedList.add("element3");
+		linkedList.add("element3");
+		linkedList.add("element2");
+		linkedList.add("element2");
+		linkedList.add("element3");
+		linkedList.add("element3");
+		
+		System.out.println(linkedList);
+    // 	get element at index element1
+    	System.out.println(linkedList.get(1));
+    
+    //  get 1st element
+    	System.out.println(linkedList.getFirst());
+    
+    // get head element/first element
+   	System.out.println(linkedList.peek());
+    System.out.println(linkedList.peekFirst());
+    
+    //  get last element
+    	System.out.println(linkedList.getLast());
+    	System.out.println(linkedList.peekLast());
+    
+    // getting the element in reverse order
+    //	System.out.println(linkedList.descendingIterator());
+    
+    // get index of the given element
+    	System.out.println(linkedList.indexOf("element1"));
+    
+    // get last index of the given element
+   	System.out.println(linkedList.lastIndexOf("element1"));
+     
+	}
+}
