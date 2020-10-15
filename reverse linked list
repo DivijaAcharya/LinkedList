@@ -1,1 +1,21 @@
-
+import java.util.LinkedList;
+public class Main
+{
+	public static void main(String[] args) {
+		LinkedList<String> linkedList = new LinkedList<>();
+		linkedList.add("elemnt1");
+		linkedList.add("elemnt2");
+		linkedList.add("elemnt3");
+		
+		// reverse a linked list using collections
+		System.out.println(Collections.reverse(linkedList));
+		
+		// reverse a linked list using for loop
+		 LinkedList<String> revLinkedList = new LinkedList<String>(); 
+        for (int i = linkedList.size() - 1; i >= 0; i--) {
+            revLinkedList.add(llist.get(i)); 
+        }
+        System.out.println(revLinkedList); 
+    } 
+	}
+}
